@@ -15,9 +15,9 @@ limitations under the License. -->
 
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.example.wordlistloader">
+    package="com.nandohidayat.app.wordlistloader">
 
-    <uses-permission android:name = "com.android.example.wordlistsqlwithcontentprovider.PERMISSION"/>
+    <uses-permission android:name = "com.nandohidayat.app.wordlistsqlwithcontentprovider.PERMISSION"/>
 
     <application
         android:allowBackup="false"
@@ -25,7 +25,7 @@ limitations under the License. -->
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.android.example.wordlistloader.MainActivity">
+        <activity android:name="com.nandohidayat.app.wordlistloader.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

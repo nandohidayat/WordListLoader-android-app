@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.example.wordlistloader;
+package com.nandohidayat.app.wordlistloader;
 
 import android.database.Cursor;
 import android.net.Uri;
@@ -25,9 +25,6 @@ import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
-import static com.android.example.wordlistloader.Contract.CONTENT_PATH;
-import static com.android.example.wordlistloader.Contract.CONTENT_URI;
 
 /**
  * Implements a RecyclerView that displays a list of words from a SQL database using a Loader.
@@ -58,8 +55,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-        String queryUri = CONTENT_URI.toString();
-        String[] projection = new String[] {CONTENT_PATH};
+        String queryUri = Contract.CONTENT_URI.toString();
+        String[] projection = new String[] {Contract.CONTENT_PATH};
         return new CursorLoader(this, Uri.parse(queryUri), projection, null, null, null);
     }
 

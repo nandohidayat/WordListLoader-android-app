@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.example.wordlistloader;
+package com.nandohidayat.app.wordlistloader;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -24,8 +24,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import static com.android.example.wordlistloader.R.id.word;
 
 /**
  * Simple Adapter for a RecyclerView with click handler for each item in the ViewHolder.
@@ -38,7 +36,7 @@ public class WordListAdapter
 
         public WordViewHolder(View itemView) {
             super(itemView);
-            wordItemView = (TextView) itemView.findViewById(word);
+            wordItemView = (TextView) itemView.findViewById(com.nandohidayat.app.wordlistloader.R.id.word);
         }
     }
 

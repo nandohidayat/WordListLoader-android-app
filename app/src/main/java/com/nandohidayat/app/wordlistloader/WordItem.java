@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.example.wordlistloader;
+package com.nandohidayat.app.wordlistloader;
 
 /**
  * Data model for one word list item.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.example.wordlistloader;
+package com.nandohidayat.app.wordlistloader;
 
 import android.net.Uri;
 import android.provider.BaseColumns;
@@ -33,7 +33,7 @@ public final class Contract {
     public static final String COUNT = "count";
 
     public static final String AUTHORITY =
-            "com.android.example.wordlistsqlwithcontentprovider.provider";
+            "com.nandohidayat.app.wordlistsqlwithcontentprovider.provider";
 
     // Only one public table.
     public static final String CONTENT_PATH = "words";
@@ -46,9 +46,9 @@ public final class Contract {
             Uri.parse("content://" + AUTHORITY + "/" + CONTENT_PATH + "/" + COUNT);
 
     static final String SINGLE_RECORD_MIME_TYPE =
-            "vnd.android.cursor.item/vnd.com.example.provider.words";
+            "vnd.android.cursor.item/vnd.com.app.provider.words";
     static final String MULTIPLE_RECORDS_MIME_TYPE =
-            "vnd.android.cursor.item/vnd.com.example.provider.words";
+            "vnd.android.cursor.item/vnd.com.app.provider.words";
 
     /*
      * Constants for the database are moved out of WordListOpenHelper into the contract.
